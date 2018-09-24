@@ -1,7 +1,6 @@
 html {
-    font-size: 18px;
-    font-family: 'Open Sans';
-    font-weight: 'Regular';
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
     /*background: url("/home/eleonora/startpage-master/img/be11f333332cc8c8be19e4cafa825fed.jpg") no-repeat center center fixed;*/
     /*background-size: cover;*/
     /*height: 100vh;*/
@@ -11,31 +10,35 @@ body {
   background-color: #ffffff;
   color: #000000;
   /*width: 1024px;*/
-  padding-left: 15%;
-  padding-right: 15%;
-  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: right;
   align-items: center;
 }
 
 body h1{
-	font-family: 'Oswald';
-  color: orange;
-  text-align: left;
+	font-family: 'IBM Plex Sans';
+  	font-weight: 'Bold';
+  	color: black;
+  	text-align: right;
+  	padding-top: -100px;
 }
 
 body h4{
-  font-family: 'Open Sans';
+  font-family: 'IBM Plex Sans';
   font-size: 20px;
+  /*background-color: #000;*/
+  border-top: 2px solid #000;
   /*font-variant: small-caps;*/
   font-weight: bold;
   letter-spacing: 3px;
-  color: #879E96;
-  text-align: left;
+  color: #000;
+  text-align: right;
   margin: 0px;
 }
 
 body h5{
-  font-family: 'Oswald';
+  font-family: 'IBM Plex Sans';
   /*font-size: 20px;*/
   /*color: #213B4C;*/
   /*text-align: left;*/
@@ -53,7 +56,7 @@ body h5{
 */
 
 header {
-  font-family: 'Oswald';
+  font-family: 'IBM Plex Sans';
   color: orange;
 }
 
@@ -66,7 +69,7 @@ footer {
     width: 100%;
     padding: 1%;
     color: black;
-    text-align: center;
+    text-align: right;
 }
 footer a{
     color: #213B4C;
@@ -90,7 +93,9 @@ ul {
 	/*text-align: center;*/
 }
 .row {
-  padding: 20px;
+  /*padding: 100px;*/
+  /*border-left: 100px solid #fff;*/
+  /*border-right: 100px solid #fff;*/
 	/*display: block;*/
 	/*text-align:  center;*/
 
@@ -108,10 +113,10 @@ ul {
 }
 
 .column a{
-  color: #879E96;
+  color: grey;
 	float: center;
-	padding: 1%;
-	bottom: 1%;
+	/*padding: 1%;*/
+	/*bottom: 1%;*/
 }
 /* Clear floats after the columns */
 .row:after {
@@ -125,39 +130,47 @@ ul {
  /* Style inputs with type="text", select elements and textareas */
 /* Add a background color and some padding around the form */
 .container {
-  float: center;
+  float: right;
     text-align: center;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-} 
+    width: 50%;
+    /*border-radius: 5px;*/
+    background-color: transparent;
+    /*padding: 20px;*/
+}
 
 form {
-  /*width: 90%;*/
-  font-family: 'Open Sans';
-  text-align: center;
+	float: right;
+  width: 100%;
+  font-family: 'IBM Plex Sans';
+  text-align: right;
   padding-bottom: 0px;
 }
 
+input,
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 3;
+}
+
 input[type=text]{
-    width: 49%; /* Full width */
-    display: inline-block;
+    width: 100%; /* Full width */
+    /*display: inline-block;*/
     padding: 12px; /* Some padding */ 
     border: 0px; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    border-bottom: 1px solid grey;
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 select, textarea {
-    width: 99%; /* Full width */
+    width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 0px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey; /* Gray border */
+    /*border-radius: 4px;  Rounded borders */
+    /*box-sizing: border-box;  Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -165,14 +178,14 @@ select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #213B4C;
+	float: center;
+    background-color: #D90D3D;
     color: white;
-    padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    padding: 8px 16px;
     cursor: pointer;
     letter-spacing: 2px;
-    border: 0px;
+    font-weight: bold;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
