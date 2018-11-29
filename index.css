@@ -57,7 +57,7 @@ body h5{
 
 header {
   font-family: 'IBM Plex Sans';
-  color: orange;
+  color: white;
 }
 
 footer {
@@ -93,7 +93,7 @@ ul {
 	/*text-align: center;*/
 }
 .row {
-  /*padding: 100px;*/
+  /*padding: 10px;*/
   /*border-left: 100px solid #fff;*/
   /*border-right: 100px solid #fff;*/
 	/*display: block;*/
