@@ -24,6 +24,14 @@ body h1{
   	padding-top: -100px;
 }
 
+body h3{
+  font-family: 'IBM Plex Sans';
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  text-align: inherit;
+}
+
 body h4{
   font-family: 'IBM Plex Sans';
   font-size: 20px;
@@ -70,6 +78,7 @@ footer {
     padding: 1%;
     color: black;
     text-align: right;
+  overflow: auto;
 }
 footer a{
     color: #213B4C;
@@ -128,14 +137,23 @@ ul {
 
 
  /* Style inputs with type="text", select elements and textareas */
-/* Add a background color and some padding around the form */
-.container {
+/* Add background color and some padding around the form */
+.container-right{
   float: right;
     text-align: center;
     width: 50%;
     /*border-radius: 5px;*/
     background-color: transparent;
     /*padding: 20px;*/
+}
+
+.container-center{
+  float: center;
+  text-align: center;
+  width: 100%;
+  /*border-radius: 5px;*/
+  background-color: transparent;
+  padding: 15%;
 }
 
 form {
@@ -179,18 +197,18 @@ select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
 	float: center;
-    background-color: #D90D3D;
+    background-color: #FFB6C1;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 6px 16px;
     cursor: pointer;
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: orange;
+    background-color: #00660B;
     letter-spacing: 2px;
     border: 0px;
 }
