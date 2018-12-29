@@ -1,98 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126334524-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+	<head>
+		<!-- comandi necessari alla codifica del sito -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<!-- Custom styles for this template go here -->
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/minireset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
 
-gtag('config', 'UA-126334524-1');
-</script>
-
-<meta charset="utf-8">
-<!-- Custom styles for this template go here -->
-<link rel="stylesheet" href="index.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet"> 
-
-<title>Eleonora.</title>
-
-<!--[if lt IE 9]>
-<script src="dist/html5shiv.js"></script>
-<![endif]-->  
-</head>
+		<title>Eleonora Castelli</title>
+		<!-- script per includere le icone come font -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+		<!-- roba necessaria per Google Analytics - Global site tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126334524-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-126334524-1');
+		</script>
+	</head>
 <body>
-<header>
-
-</header>
-<div class="row" style="background-color: #D90D3D; color: #ffffff; text-align: left; padding: 10px;">
-<br>
-<a href="https://eleonoracastelli.github.io/blog" style="color: #ffffff; text-decoration: none; font-weight: bold;">blog</a> <a href="file:///home/eleonora/Documents/Personale/github-pages/eleonoracastelli.github.io/graphics/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;">graphics</a>
-</div>
-<h1>Eleonora Castelli</h1>
-<!-- <div class="wrapper"> -->
-<!-- 			<div class="row">
-<div class="column" style="background-color: #ededed; width:30%">
-<h4>Research</h4>
-<p>
-25, PhD in corso
-<br>
-Ricerca
-<br>
-Esperienze di insegnamento e comunicazione
-</p>
-</div>
-<div class="column" style="background-color: #ededed; width:30%">
-<h4>Teaching</h4>
-<p>
-25, PhD in corso
-<br>
-Ricerca
-<br>
-Esperienze di insegnamento e comunicazione
-</p>
-</div>
-</div> -->
-<div class="row">
-<div class="column" style=" width:50%">
-<h4>now</h4>
-<p>
-	<ul>
-		<li>reading <a href="https://www.lafeltrinelli.it/libri/daniel-pennac/storia-un-corpo/9788807019210" target="_blank">Storia di un corpo - Daniel Pennac</a></li>
-		<li>listening to <a href="https://irlpodcast.org/" target="_blank">IRL Podcast</a></li>
-		<li>swimming classes on and off</li>
-		<li>improving HTML and CSS</li>
-		<li>restyling our home</li>
-	</ul>
-</p>
-</div>
-</div>
-<!-- </div>	 -->
-<div class="containerright">
-<h4>contact</h4>
-
-<form action="https://formspree.io/ell.castelli@gmail.com"
-method="POST">
-
-<!-- <label for="fname">Name</label> -->
-<input class="row" type="text" id="name" name="name" placeholder="Name" required>
-
-<!-- <label for="email">E-mail</label> -->
-<input class="row" type="text" id="email" name="email" placeholder="E-mail" required>
-
-<!-- <label for="message">Message</label> -->
-<textarea id="message" name="message" placeholder="Write something here" style="height:200px" required></textarea>
-
-<input type="submit" value="SEND">
-
-</form>
-</div> 
-
-	<footer>
-	Eleonora Castelli, 2018
-	<br>
-	All ugly elements are mine.
-	</footer>
+	<div id="wallpaper" class="wallpaper" data-image="imgs/canyon.png"></div>
+	<div class="content">
+		<aside class="side">
+			<figure id="picture" class="picture">
+				<div class="picture-shadow"></div>
+				<img id="pictureImage"
+							class="picture-image"
+							src="imgs/foto-ele.png"
+							srcset="imgs/foto-ele.png 1x,
+											imgs/foto-ele@2x.png 2x,
+											imgs/foto-ele@3x.png 3x"
+							alt="Portrait of Alex Jefferson"
+							width="320"
+							height="320">
+			</figure>
+		</aside>
+	<main class="about">
+		<h1 class="name">
+		Eleonora Castelli
+		</h1>
+		<p class="job">
+		Web enthusiast
+		</p>
+		<hr class="hr">
+		<div class="description">
+			<p>
+				<ul>
+					<li>reading <a href="https://www.lafeltrinelli.it/libri/daniel-pennac/storia-un-corpo/9788807019210" target="_blank">Storia di un corpo - Daniel Pennac</a></li>
+					<li>listening to <a href="https://irlpodcast.org/" target="_blank">IRL Podcast</a></li>
+					<li>swimming classes on and off</li>
+					<li>improving HTML and CSS</li>
+					<li>restyling our dino-home</li>
+				</ul>
+			</p>
+		</div>
+		<div class="contact">
+			<ul class="social">
+				<li>
+					<a>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a>
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a>
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+			<a class="button" href="mailto:ell.castelli@gmail.com">
+			Get in touch
+			</a>
+		</div>
+	</main>
+	</div>
 </body>
 </html>
