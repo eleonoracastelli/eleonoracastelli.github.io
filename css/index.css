@@ -1,8 +1,15 @@
+/* colors */
+/* F26107 orange */
+/* 7AB317 green */
+/* FED90D yellow */
+/* 2A87EF blue */
+/* FE93B5 pink */
+
 /* 1. Base */
 html {
   background-color: #fff;
-  background-image: linear-gradient(to bottom right, #cc5500, #fff);
-  color: #fff;
+  /* background-image: linear-gradient(to bottom right, #cc5500, #fff); */
+  color: #000;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +25,6 @@ a {
   color: currentColor;
   cursor: pointer;
   text-decoration: none;
-  font-style: italic;
 }
 
 /* 2. Shared */
@@ -61,10 +67,11 @@ a {
 
 /* 3. Specific */
 .wallpaper {
-  background-image: url("../imgs/canyon.png");
+  background-image: url("../imgs/wllp.png");
   background-position: center;
-  background-size: cover;
-  opacity: 0.08;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 1;
   position: fixed;
 }
 
@@ -75,11 +82,12 @@ a {
 }
 
 .side {
-  max-height: 20rem;
-  max-width: 20rem;
+  max-height: 15rem;
+  max-width: 15rem;
 }
 
 .about {
+  background-color: #fff;
   max-width: 26rem;
 }
 
@@ -105,26 +113,45 @@ a {
   font-size: 2.25rem;
   line-height: 1.125;
   margin-bottom: 0.5rem;
+  padding: 1rem 1rem 0rem 0rem;
 }
 
 .job {
-  color: #ffe479;
+  color: #000;
   font-size: 0.75rem;
 }
 
 .hr {
-  background-color: #ff470f;
+  background-color: #FED90D;
   border: none;
   content: "";
-  height: 5px;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  height: 7px;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
   transform-origin: center left;
-  width: 4rem;
+  width: 11rem;
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.description a {
+  position: relative;
+}
+
+.description a:before {
+  border-bottom: 0.4rem solid #FE93B5;
+  content: "";
+  height: 95%;
+  opacity: 0.45;
+  position: absolute;
+  width: 100%;
+}
+
+.description li {
+  list-style: square inside;
+  /* text-indent: 1rem; */
 }
 
 .contact {
@@ -134,10 +161,10 @@ a {
 }
 
 .button {
-  background-color: #fff;
+  background-color: #2A87EF;
   /* border-radius: 290486px; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  color: #9013fe;
+  color: #fff;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
@@ -176,10 +203,10 @@ a {
   align-items: center;
   display: flex;
   font-size: 1.5rem;
-  /* color: #cc0000; */
+  color: #2A87EF;
   height: 2rem;
   justify-content: center;
-  opacity: 0.8;
+  opacity: 0.7;
   transition-property: opacity, transform;
   width: 2rem;
   will-change: opacity, transform;
@@ -222,7 +249,7 @@ a {
   .side {
     flex-grow: 0;
     flex-shrink: 0;
-    height: 20rem;
+    height: 15rem;
     order: 2;
     margin-left: 3rem;
     width: 100%;
