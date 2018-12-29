@@ -21,11 +21,26 @@ html {
   /* text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 }
 
+header {
+  background-color: transparent;
+  font-size: 1.2rem;
+  left: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 1% 10% 1% 10%;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 100%;
+}
+
 a {
   color: currentColor;
   cursor: pointer;
   text-decoration: none;
 }
+
 
 /* 2. Shared */
 .wallpaper,
@@ -48,7 +63,7 @@ a {
 .button,
 .social a {
   transform-origin: center;
-  transition-duration: 80ms;
+  transition-duration: 100ms;
 }
 
 .wallpaper,
@@ -82,7 +97,7 @@ a {
 }
 
 .side {
-  max-height: 18;
+  max-height: 18rem;
   max-width: 18rem;
 }
 
@@ -188,8 +203,8 @@ a {
 
 .social {
   display: flex;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  /* margin-top: 1.5rem;
+  margin-bottom: 0.5rem; */
 }
 
 .social li {
@@ -222,6 +237,24 @@ a {
   transform: scale(1.1);
 }
 
+.topnav a {
+  display: inline-block;
+  float: right;
+  color: #000;
+  padding: 0 0.5rem 0 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.topnav a:hover {
+
+}
+
+.topnav a.active {
+  border-bottom: 0.4rem solid #2A87EF;
+  opacity: 0.8;
+}
 /* 4. Responsiveness (use of mobile vs desktops) */
 
 @media screen and (max-width: 799px) {
@@ -243,8 +276,9 @@ a {
 
 @media screen and (min-width: 800px) {
   .content {
-    align-items: center;
+    align-items: top;
     justify-content: center;
+    margin-top: 5rem;
     padding: 6rem;
   }
 
