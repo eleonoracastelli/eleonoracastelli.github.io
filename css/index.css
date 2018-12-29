@@ -82,13 +82,14 @@ a {
 }
 
 .side {
-  max-height: 15rem;
-  max-width: 15rem;
+  max-height: 18;
+  max-width: 18rem;
 }
 
 .about {
   background-color: #fff;
   max-width: 26rem;
+  padding: 1rem 1rem 0rem 0rem;
 }
 
 .picture {
@@ -99,9 +100,9 @@ a {
 
 .picture-shadow {
   border-radius: 290486px;
-  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 50%);
   position: absolute;
-  top: 5%;
+  top: 3%;
 }
 
 .picture-image {
@@ -113,7 +114,6 @@ a {
   font-size: 2.25rem;
   line-height: 1.125;
   margin-bottom: 0.5rem;
-  padding: 1rem 1rem 0rem 0rem;
 }
 
 .job {
@@ -225,6 +225,9 @@ a {
 /* 4. Responsiveness (use of mobile vs desktops) */
 
 @media screen and (max-width: 799px) {
+  .description {
+    font-size: 1.2rem;
+  }
   .content {
     flex-direction: column;
     justify-content: center;
@@ -241,15 +244,14 @@ a {
 @media screen and (min-width: 800px) {
   .content {
     align-items: center;
-    justify-content: space-around;
-    justify-content: space-evenly;
-    padding: 4rem;
+    justify-content: center;
+    padding: 6rem;
   }
 
   .side {
     flex-grow: 0;
     flex-shrink: 0;
-    height: 15rem;
+    height: 20rem;
     order: 2;
     margin-left: 3rem;
     width: 100%;
