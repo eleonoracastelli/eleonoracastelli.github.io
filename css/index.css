@@ -33,7 +33,7 @@ header {
   text-align: left;
   top: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 a {
@@ -241,10 +241,9 @@ a {
 }
 .topnav li {
   height: 2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
   float: right;
   text-align: center;
-  width: 2rem;
 }
 .topnav a {
   display: flex;
@@ -258,9 +257,11 @@ a {
   will-change: opacity, transform;
 }
 .topnav a:hover {
-
+  transform: scale(1.02);
 }
-
+.topnav a:active {
+  transform: scale(0.98) translateY(-2px);
+}
 .topnav a.active {
   border-bottom: 0.4rem solid #2A87EF;
   opacity: 0.8;
