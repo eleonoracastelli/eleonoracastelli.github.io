@@ -256,16 +256,44 @@ a {
   vertical-align: top;
   will-change: opacity, transform;
 }
-.topnav a:hover {
-  transform: scale(1.02);
-}
-.topnav a:active {
-  transform: scale(0.98) translateY(-2px);
-}
 .topnav a.active {
   border-bottom: 0.4rem solid #2A87EF;
-  opacity: 0.8;
+  opacity: 1;
 }
+.topnav a:hover {
+ border-bottom: 0.4rem solid #7AB317;
+ opacity: 1;
+}
+.topnav a:active {
+  transform: scale(0.98) translateY(2px);
+}
+
+/* 3b. styling of graphics section */
+.about-gr {
+  background-color: #fff;
+  max-width: 50rem;
+  padding: 1rem 1rem 0rem 0rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  line-height: 1.125;
+  margin-bottom: 0.2rem;
+}
+.hr-graphics {
+    background-color: #2A87EF;
+    border: none;
+    content: "";
+    height: 4px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    transform-origin: center left;
+    width: 15rem;
+}
+img {
+  margin: 0.75rem;
+}
+
 /* 4. Responsiveness (use of mobile vs desktops) */
 
 @media screen and (max-width: 799px) {
