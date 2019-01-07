@@ -28,7 +28,7 @@ header {
   margin-top: 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
-  padding: 1% 10% 1% 10%;
+  padding: 0.5% 10% 0.5% 10%;
   position: absolute;
   text-align: left;
   top: 0;
@@ -75,7 +75,8 @@ a {
 .hr,
 .description,
 .contact,
-.social li {
+.social li,
+.topnav li {
   animation-duration: 0.7s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   animation-fill-mode: both;

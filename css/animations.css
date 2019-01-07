@@ -116,7 +116,7 @@
 }
 
 .topnav li {
-  animation-duration: 800ms;
+  animation-duration: 500ms;
   animation-name: slideDown;
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
 }
