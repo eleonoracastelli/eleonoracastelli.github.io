@@ -121,6 +121,7 @@
   animation-name: fillUp;
 }
 .description {
+  animation-duration: 750ms;
   animation-name: slideUp;
 }
 .social li {
