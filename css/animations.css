@@ -57,6 +57,16 @@
     transform: translateY(0);
   }
 }
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes zoomOut {
   from {
     opacity: 0;
@@ -97,9 +107,11 @@
 .picture.is-loaded .picture-image {
   animation-name: picImage;
 }
-.name,
-.title {
+.name {
   animation-name: slideDown;
+}
+.title {
+  animation-name: slideRight;
 }
 .job {
   animation-name: slideUp;
