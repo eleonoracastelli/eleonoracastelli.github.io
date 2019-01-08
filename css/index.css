@@ -71,8 +71,10 @@ a {
 .picture-shadow,
 .picture-image,
 .name,
+.title,
 .job,
 .hr,
+.hr-graphics,
 .description,
 .contact,
 .social li,
@@ -262,11 +264,10 @@ a {
   opacity: 1;
 }
 .topnav a:hover {
- border-bottom: 0.4rem solid #7AB317;
- opacity: 1;
+ border-bottom: 0.4rem solid #69ABF3;
 }
 .topnav a:active {
-  transform: scale(0.98) translateY(2px);
+  transform: scale(0.99) translateY(1px);
 }
 
 /* 3b. styling of graphics section */

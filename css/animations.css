@@ -97,13 +97,15 @@
 .picture.is-loaded .picture-image {
   animation-name: picImage;
 }
-.name {
+.name,
+.title {
   animation-name: slideDown;
 }
 .job {
   animation-name: slideUp;
 }
-.hr {
+.hr,
+.hr-graphics {
   animation-name: fillUp;
 }
 .description {
@@ -123,13 +125,15 @@
 
 
 /* 3. add delays */
-.name {
+.name,
+.title {
   animation-delay: 100ms;
 }
 .job {
   animation-delay: 200ms;
 }
-.hr {
+.hr,
+.hr-graphics {
   animation-delay: 300ms;
 }
 .description {
