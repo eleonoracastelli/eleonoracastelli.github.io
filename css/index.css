@@ -301,25 +301,27 @@ img {
 
 @media screen and (max-width: 799px) {
 header{
-  left:50%;
-  transform:translateX(-50%);
-  position: absolute;
-  width:100%;
-  max-width: 799px;
-  z-index: 1;
-  text-align: center;
   display: block;
+  left:50%;
+  max-width: 799px;
+  max-height: 4rem;
+  position: absolute;
+  text-align: center;
+  transform:translateX(-50%);
+  width:100%;
+  z-index: 1;
 }
-  .description {
-    font-size: 1.2rem;
-  }
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5rem 3rem;
+    z-index: auto;
   }
 
+  .description {
+    font-size: 1.3rem;
+  }
   .side {
     margin-bottom: 3rem;
     width: 100%;
