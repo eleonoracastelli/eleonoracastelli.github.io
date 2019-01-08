@@ -271,8 +271,8 @@ a {
 
 /* 3b. styling of graphics section */
 .about-gr {
-  background-color: #fff;
-  max-width: 50rem;
+  background-color: transparent;
+  max-width: 40rem;
   padding: 1rem 1rem 0rem 0rem;
 }
 
